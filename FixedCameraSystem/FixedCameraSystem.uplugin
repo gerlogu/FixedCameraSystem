@@ -1,0 +1,24 @@
+{
+	"FileVersion": 3,
+	"Version": 1,
+	"VersionName": "1.0",
+	"FriendlyName": "Fixed Camera System",
+	"Description": "Add fixed cameras to your levels.",
+	"Category": "Other",
+	"CreatedBy": "German Lopez",
+	"CreatedByURL": "https://www.gerlogu.com",
+	"DocsURL": "https://gerlogu.com/wp-content/uploads/2023/02/Fixed-Camera-System-Users-Manual.pdf",
+	"MarketplaceURL": "",
+	"SupportURL": "https://gerlogu.com/",
+	"CanContainContent": true,
+	"IsBetaVersion": false,
+	"IsExperimentalVersion": false,
+	"Installed": false,
+	"Modules": [
+		{
+			"Name": "FixedCameraSystem",
+			"Type": "Editor",
+			"LoadingPhase": "PostEngineInit"
+		}
+	]
+}
