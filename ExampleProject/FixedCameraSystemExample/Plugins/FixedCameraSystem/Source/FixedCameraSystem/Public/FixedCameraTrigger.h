@@ -42,7 +42,7 @@ public:
 	/// <summary>
 	/// Root scene component.
 	/// </summary>
-	UPROPERTY(VisibleDefaultsOnly)
+	UPROPERTY(VisibleDefaultsOnly, meta = (Category = "Fixed Camera Trigger"))
 	USceneComponent* Root;
 
 	/// <summary>
@@ -109,9 +109,9 @@ private:
 	/// <param name="OtherBodyIndex"></param>
 	/// <param name="bFromSweep"></param>
 	/// <param name="SweepResult"></param>
-	UFUNCTION(BlueprintCallable, BlueprintNativeEvent,  meta = (Tooltip="Overlap event - Trigger 1."))
-	void OnBoxBeginOverlap1(UPrimitiveComponent* OverlappedComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult);
-	
+	UFUNCTION(BlueprintCallable, meta = (Category = "Fixed Camera Trigger", Tooltip = "Overlap event - Trigger 1."))
+	void OnTriggerBeginOverlap1(UPrimitiveComponent* OverlappedComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult);
+
 	/// <summary>
 	/// Overlap event - Trigger 2.
 	/// </summary>
@@ -121,9 +121,9 @@ private:
 	/// <param name="OtherBodyIndex"></param>
 	/// <param name="bFromSweep"></param>
 	/// <param name="SweepResult"></param>
-	UFUNCTION(BlueprintCallable, BlueprintNativeEvent, meta = (Tooltip = "Overlap event - Trigger 2."))
-	void OnBoxBeginOverlap2(UPrimitiveComponent* OverlappedComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult);
-	
+	UFUNCTION(BlueprintCallable, meta = (Category = "Fixed Camera Trigger", Tooltip = "Overlap event - Trigger 2."))
+	void OnTriggerBeginOverlap2(UPrimitiveComponent* OverlappedComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult);
+
 	/// <summary>
 	/// End overlap event - Trigger 1.
 	/// </summary>
@@ -131,9 +131,9 @@ private:
 	/// <param name="OtherActor"></param>
 	/// <param name="OtherComp"></param>
 	/// <param name="OtherBodyIndex"></param>
-	UFUNCTION(BlueprintCallable, BlueprintNativeEvent, meta = (Tooltip = "End overlap event - Trigger 1."))
-	void OnComponentEndOverlap1(UPrimitiveComponent* OverlappedComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex);
-	
+	UFUNCTION(BlueprintCallable, meta = (Category = "Fixed Camera Trigger", Tooltip = "End overlap event - Trigger 1."))
+	void OnTriggerEndOverlap1(UPrimitiveComponent* OverlappedComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex);
+
 	/// <summary>
 	/// End overlap event - Trigger 2.
 	/// </summary>
@@ -141,8 +141,8 @@ private:
 	/// <param name="OtherActor"></param>
 	/// <param name="OtherComp"></param>
 	/// <param name="OtherBodyIndex"></param>
-	UFUNCTION(BlueprintCallable, BlueprintNativeEvent, meta = (Tooltip = "End overlap event - Trigger 2."))
-	void OnComponentEndOverlap2(UPrimitiveComponent* OverlappedComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex);
+	UFUNCTION(BlueprintCallable, meta = (Category = "Fixed Camera Trigger", Tooltip = "End overlap event - Trigger 2."))
+	void OnTriggerEndOverlap2(UPrimitiveComponent* OverlappedComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex);
 
 protected:
 	/// <summary>

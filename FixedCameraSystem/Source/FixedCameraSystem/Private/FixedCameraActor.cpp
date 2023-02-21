@@ -14,6 +14,8 @@
 #include "Math/UnrealMathVectorCommon.h"
 #include "Math/Quat.h"
 
+#define LOCTEXT_NAMESPACE "FFixedCameraActor"
+
 #pragma region UNREAL_ENGINE_EVENTS
 /// <summary>
 /// Sets default values for this actor's properties.
@@ -23,7 +25,6 @@ AFixedCameraActor::AFixedCameraActor()
 	PrimaryActorTick.bCanEverTick = true;
 
 	Camera = CreateDefaultSubobject<UCameraComponent>("Camera");
-	Camera->SetupAttachment(Root);
 	RootComponent = Camera;
 
 	SetActorTickEnabled(false);
@@ -72,7 +73,7 @@ void AFixedCameraActor::BeginPlay()
 		if (!CameraRail)
 		{
 			DialogText = FText::Format(
-				LOCTEXT("PluginButtonDialogText", "ON RAIL CAMERA MODE\n------------------------\nPlease, ensure that a {0} reference is set in {1}."),
+				LOCTEXT("FFixedCameraActor", "ON RAIL CAMERA MODE\n------------------------\nPlease, ensure that a {0} reference is set in {1}."),
 				FText::FromString(TEXT("Rail")),
 				FText::FromString(UKismetSystemLibrary::GetDisplayName(this))
 			);
@@ -91,7 +92,7 @@ void AFixedCameraActor::BeginPlay()
 		if (!FocusTarget)
 		{
 			DialogText = FText::Format(
-				LOCTEXT("PluginButtonDialogText", "FOCUS ON TARGET MODE\n--------------------------\nPlease, ensure that a {0} reference is set in {1}."),
+				LOCTEXT("FFixedCameraActor", "FOCUS ON TARGET MODE\n--------------------------\nPlease, ensure that a {0} reference is set in {1}."),
 				FText::FromString(TEXT("Target")),
 				FText::FromString(UKismetSystemLibrary::GetDisplayName(this))
 			);
@@ -104,7 +105,7 @@ void AFixedCameraActor::BeginPlay()
 		if (!FocusTarget)
 		{
 			DialogText = FText::Format(
-				LOCTEXT("PluginButtonDialogText", "FOCUS ON MIDDLE LOCATION BETWEEN PLAYER AND TARGET MODE\n--------------------------------------------------------------------\nPlease, ensure that a {0} reference is set in {1}."),
+				LOCTEXT("FFixedCameraActor", "FOCUS ON MIDDLE LOCATION BETWEEN PLAYER AND TARGET MODE\n--------------------------------------------------------------------\nPlease, ensure that a {0} reference is set in {1}."),
 				FText::FromString(TEXT("Target")),
 				FText::FromString(UKismetSystemLibrary::GetDisplayName(this))
 			);

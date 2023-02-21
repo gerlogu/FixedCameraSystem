@@ -54,11 +54,11 @@ AFixedCameraTrigger::AFixedCameraTrigger()
 
 	SetActorScale3D(FVector(1.f, 5, 5));
 
-	Trigger1->OnComponentBeginOverlap.AddDynamic(this, &AFixedCameraTrigger::OnBoxBeginOverlap1);
-	Trigger1->OnComponentBeginOverlap.AddDynamic(this, &AFixedCameraTrigger::OnBoxBeginOverlap2);
+	Trigger1->OnComponentBeginOverlap.AddDynamic(this, &AFixedCameraTrigger::OnTriggerBeginOverlap1);
+	Trigger1->OnComponentBeginOverlap.AddDynamic(this, &AFixedCameraTrigger::OnTriggerBeginOverlap2);
 
-	Trigger1->OnComponentEndOverlap.AddDynamic(this, &AFixedCameraTrigger::OnComponentEndOverlap1);
-	Trigger2->OnComponentEndOverlap.AddDynamic(this, &AFixedCameraTrigger::OnComponentEndOverlap2);
+	Trigger1->OnComponentEndOverlap.AddDynamic(this, &AFixedCameraTrigger::OnTriggerEndOverlap1);
+	Trigger2->OnComponentEndOverlap.AddDynamic(this, &AFixedCameraTrigger::OnTriggerEndOverlap2);
 	
 }
 
@@ -123,7 +123,7 @@ void AFixedCameraTrigger::Tick(float DeltaTime)
 /// <param name="OtherBodyIndex"></param>
 /// <param name="bFromSweep"></param>
 /// <param name="SweepResult"></param>
-void AFixedCameraTrigger::OnBoxBeginOverlap1(UPrimitiveComponent* OverlappedComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult)
+void AFixedCameraTrigger::OnTriggerBeginOverlap1(UPrimitiveComponent* OverlappedComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult)
 {
 	// Fill with custom code.
 }
@@ -137,7 +137,7 @@ void AFixedCameraTrigger::OnBoxBeginOverlap1(UPrimitiveComponent* OverlappedComp
 /// <param name="OtherBodyIndex"></param>
 /// <param name="bFromSweep"></param>
 /// <param name="SweepResult"></param>
-void AFixedCameraTrigger::OnBoxBeginOverlap2(UPrimitiveComponent* OverlappedComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult)
+void AFixedCameraTrigger::OnTriggerBeginOverlap2(UPrimitiveComponent* OverlappedComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult)
 {
 	// Fill with custom code.
 }
@@ -149,7 +149,7 @@ void AFixedCameraTrigger::OnBoxBeginOverlap2(UPrimitiveComponent* OverlappedComp
 /// <param name="OtherActor"></param>
 /// <param name="OtherComp"></param>
 /// <param name="OtherBodyIndex"></param>
-void AFixedCameraTrigger::OnComponentEndOverlap1(UPrimitiveComponent* OverlappedComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex)
+void AFixedCameraTrigger::OnTriggerEndOverlap1(UPrimitiveComponent* OverlappedComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex)
 {
 	if (!Camera1)
 		return;
@@ -170,7 +170,7 @@ void AFixedCameraTrigger::OnComponentEndOverlap1(UPrimitiveComponent* Overlapped
 /// <param name="OtherActor"></param>
 /// <param name="OtherComp"></param>
 /// <param name="OtherBodyIndex"></param>
-void AFixedCameraTrigger::OnComponentEndOverlap2(UPrimitiveComponent* OverlappedComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex)
+void AFixedCameraTrigger::OnTriggerEndOverlap2(UPrimitiveComponent* OverlappedComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex)
 {
 	if (!Camera2)
 		return;

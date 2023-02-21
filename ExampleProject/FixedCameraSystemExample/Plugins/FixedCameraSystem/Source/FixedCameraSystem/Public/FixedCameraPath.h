@@ -16,7 +16,7 @@ public:
 	/// <summary>
 	/// Camera Rail Path.
 	/// </summary>
-	UPROPERTY(VisibleAnywhere, meta = (Tooltip="Camera Rail Path."))
+	UPROPERTY(VisibleAnywhere, meta = (Category = "Fixed Camera Path", Tooltip = "Camera Rail Path."))
 	USplineComponent* CameraPath;
 
 public:	
@@ -28,13 +28,13 @@ public:
 	/// <summary>
 	/// Returns rail length.
 	/// </summary>
-	UFUNCTION(BlueprintCallable, meta = (Tooltip = "Returns rail length."))
+	UFUNCTION(BlueprintCallable, meta = (Category = "Fixed Camera Path", Tooltip = "Returns rail length."))
 	float GetRailLength();
 
 	/// <summary>
 	/// Returns first spline point location.
 	/// </summary>
-	UFUNCTION(BlueprintCallable, meta = (Tooltip = "Returns first spline point location."))
+	UFUNCTION(BlueprintCallable, meta = (Category = "Fixed Camera Path", Tooltip = "Returns first spline point location."))
 	FVector GetInitialLocation();
 
 
@@ -43,7 +43,7 @@ public:
 	/// </summary>
 	/// <param name="TravellingDistance">Travelling distance.</param>
 	/// <returns></returns>
-	UFUNCTION(BlueprintCallable, meta = (Tooltip = "Returns Location Along Rail."))
+	UFUNCTION(BlueprintCallable, meta = (Category = "Fixed Camera Path", Tooltip = "Returns Location Along Rail."))
 	FVector GetLocationAlongRail(float TravellingDistance);
 
 	/// <summary>

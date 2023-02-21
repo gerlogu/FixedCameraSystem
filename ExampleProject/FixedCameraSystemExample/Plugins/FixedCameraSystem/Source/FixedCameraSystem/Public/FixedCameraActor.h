@@ -104,7 +104,7 @@ public:
 	/// <summary>
 	/// Auto-Disables tick after deactivating the camera.
 	/// </summary>
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (Category = "Fixed Camera Settings|Optimization", DisplayName = "Auto-Deactivate Tick Method", Tooltip="Disables tick calls after deacticating the camera.", Tooltip = "Auto-Disables tick after deactivating the camera."))
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (Category = "Fixed Camera Settings|Optimization", DisplayName = "Auto-Deactivate Tick Method", Tooltip = "Auto-Disables tick after deactivating the camera."))
 	bool bAutoDeactivateTickMethod;
 
 	/// <summary>

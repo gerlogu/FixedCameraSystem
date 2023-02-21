@@ -1,5 +1,6 @@
 {
 	"FileVersion": 3,
+	"EngineVersion": "4.27.0",
 	"Version": 1,
 	"VersionName": "1.0",
 	"FriendlyName": "Fixed Camera System",
@@ -8,12 +9,13 @@
 	"CreatedBy": "German Lopez",
 	"CreatedByURL": "https://www.gerlogu.com",
 	"DocsURL": "https://gerlogu.com/wp-content/uploads/2023/02/Fixed-Camera-System-Users-Manual.pdf",
-	"MarketplaceURL": "",
+	"MarketplaceURL": "com.epicgames.launcher://ue/marketplace/product/f05ebeac98e64ad9ab12b1c41ecbf35e",
 	"SupportURL": "https://gerlogu.com/",
 	"CanContainContent": true,
 	"IsBetaVersion": false,
 	"IsExperimentalVersion": false,
 	"Installed": false,
+	"WhitelistPlatforms": [ "Win64", "Win32", "Mac", "IOS", "Android", "HTML5", "Linux", "XBoxOne", "PS4", "Switch" ],
 	"Modules": [
 		{
 			"Name": "FixedCameraSystem",
