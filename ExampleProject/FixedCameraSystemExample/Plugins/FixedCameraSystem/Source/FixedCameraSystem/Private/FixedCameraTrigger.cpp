@@ -1,7 +1,7 @@
 // Copyright 2023 German Lopez. All Rights Reserved.
 
-#include "UObject/ConstructorHelpers.h"
 #include "FixedCameraTrigger.h"
+#include "UObject/ConstructorHelpers.h"
 
 #pragma region UNREAL_ENGINE_EVENTS
 /// <summary>

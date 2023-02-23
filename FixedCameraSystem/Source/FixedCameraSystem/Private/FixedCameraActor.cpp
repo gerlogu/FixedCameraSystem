@@ -14,7 +14,7 @@
 #include "Math/UnrealMathVectorCommon.h"
 #include "Math/Quat.h"
 
-#define LOCTEXT_NAMESPACE "FFixedCameraActor"
+#define LOCTEXT_NAMESPACE "FixedCameraSystem"
 
 #pragma region UNREAL_ENGINE_EVENTS
 /// <summary>

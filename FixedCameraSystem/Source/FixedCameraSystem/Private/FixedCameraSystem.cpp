@@ -8,7 +8,7 @@
 #include "Styling/SlateStyleRegistry.h"
 #include "Styling/SlateTypes.h"
 
-#define LOCTEXT_NAMESPACE "FFixedCameraSystemModule"
+#define LOCTEXT_NAMESPACE "FixedCameraSystem"
 
 /// <summary>
 /// Executed during module initialization.

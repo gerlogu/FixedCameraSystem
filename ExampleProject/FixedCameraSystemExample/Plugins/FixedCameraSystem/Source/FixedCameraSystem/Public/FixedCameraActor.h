@@ -110,7 +110,7 @@ public:
 	/// <summary>
 	/// Camera component (Root).
 	/// </summary>
-	UPROPERTY(VisibleDefaultsOnly)
+	UPROPERTY(VisibleDefaultsOnly, Category = FixedCamera)
 	UCameraComponent* Camera;
 
 private:

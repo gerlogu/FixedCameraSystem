@@ -1,6 +1,5 @@
 {
 	"FileVersion": 3,
-	"EngineVersion": "4.27.0",
 	"Version": 1,
 	"VersionName": "1.0",
 	"FriendlyName": "Fixed Camera System",
@@ -15,12 +14,12 @@
 	"IsBetaVersion": false,
 	"IsExperimentalVersion": false,
 	"Installed": false,
-	"WhitelistPlatforms": [ "Win64", "Win32", "Mac", "IOS", "Android", "HTML5", "Linux", "XBoxOne", "PS4", "Switch" ],
 	"Modules": [
 		{
 			"Name": "FixedCameraSystem",
 			"Type": "Editor",
-			"LoadingPhase": "PostEngineInit"
+			"LoadingPhase": "PostEngineInit",
+			"WhitelistPlatforms": [ "Win64", "Win32", "Mac", "IOS", "Android", "HTML5", "Linux", "XboxOne", "PS4", "Switch" ]
 		}
 	]
 }
