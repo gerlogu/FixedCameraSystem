@@ -1,11 +1,11 @@
 # Fixed Camera System
-[![Version](https://img.shields.io/badge/Version-1.0.2-3FB911?style=flat&logo&logoColor=white&labelColor=4d4d4d)](https://github.com/gerlogu/BulletHellEditor/releases/tag/V1.0.2)</br>
+![Version](https://img.shields.io/badge/Version-1.0.3-3FB911?style=flat&logo&logoColor=white&labelColor=4d4d4d)</br>
 Add cinematographic cameras by easily dragging them into the scene and use different tools to configure their style and path.
 
 ![Thumbnail](https://user-images.githubusercontent.com/55363746/219978541-f7c4c4d5-d890-4dfa-a4d6-4e3249c2244e.jpg)
 
 ## Description
-***Latest Update:*** _February 21st, 2023_
+***Latest Update:*** _February 23th, 2023_
 
 ***[Documentation](https://gerlogu.com/wp-content/uploads/2023/02/Fixed-Camera-System-Users-Manual.pdf) / [Official Website](https://gerlogu.com) / [GitHub Profile](https://github.com/gerlogu)***
 
