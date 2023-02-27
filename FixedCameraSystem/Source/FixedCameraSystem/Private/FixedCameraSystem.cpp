@@ -27,6 +27,9 @@ void FFixedCameraSystemModule::StartupModule()
 			*UActorFactory::StaticClass(),
 			FAssetData(FixedCamera, true),
 			FName("FixedCamera_Thumbnail"),
+			#if ENGINE_MAJOR_VERSION == 5
+				FName("FixedCamera_Icon"),
+			#endif
 			TOptional<FLinearColor>(),
 			TOptional<int32>(),
 			NSLOCTEXT("PlacementMode", "Fixed Camera", "Fixed Camera")
@@ -40,6 +43,9 @@ void FFixedCameraSystemModule::StartupModule()
 			*UActorFactory::StaticClass(),
 			FAssetData(FixedCameraPath, true),
 			FName("Spline_Thumbnail"),
+			#if ENGINE_MAJOR_VERSION == 5
+				FName("Spline_Icon"),
+			#endif
 			TOptional<FLinearColor>(),
 			TOptional<int32>(),
 			NSLOCTEXT("PlacementMode", "Fixed Camera | Path", "Fixed Camera | Path")
@@ -53,6 +59,9 @@ void FFixedCameraSystemModule::StartupModule()
 			*UActorFactory::StaticClass(),
 			FAssetData(FixedCameraTrigger, true),
 			FName("Trigger_Thumbnail"),
+			#if ENGINE_MAJOR_VERSION == 5
+				FName("Trigger_Icon"),
+			#endif
 			TOptional<FLinearColor>(),
 			TOptional<int32>(),
 			NSLOCTEXT("PlacementMode", "Fixed Camera | Trigger", "Fixed Camera | Trigger")
