@@ -2,7 +2,7 @@
 ![Version](https://img.shields.io/badge/Version-1.0.3-3FB911?style=flat&logo&logoColor=white&labelColor=4d4d4d)</br>
 Add cinematographic cameras by easily dragging them into the scene and use different tools to configure their style and path.
 
-![Thumbnail](https://user-images.githubusercontent.com/55363746/219978541-f7c4c4d5-d890-4dfa-a4d6-4e3249c2244e.jpg)
+![Thumbnail](https://user-images.githubusercontent.com/55363746/223795282-e84bbf4b-81de-4f7c-919e-223c3363df94.png)
 
 ## Description
 ***Latest Update:*** _February 23th, 2023_
