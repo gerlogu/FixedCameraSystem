@@ -6,7 +6,7 @@ Add cinematographic cameras by easily dragging them into the scene and use diffe
 
 ![Thumbnail](https://user-images.githubusercontent.com/55363746/223795282-e84bbf4b-81de-4f7c-919e-223c3363df94.png)
 
-### <div align="center">If you find the asset useful, please support it by giving a "★ Star" to the repository, thank you!</div>
+##### <div align="center">If you find the asset useful, please support it by giving a "★ Star" to the repository, thank you!</div>
 
 ## Description
 ***Latest Update:*** _February 23th, 2023_
