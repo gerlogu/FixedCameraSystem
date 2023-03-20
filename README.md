@@ -9,7 +9,7 @@ Add cinematographic cameras by easily dragging them into the scene and use diffe
 ##### <div align="center">If you find this asset useful, please support it by giving a "★ Star" to the repository, thank you!</div>
 
 ## Description
-***Latest Update:*** _February 23th, 2023_
+***Latest Update:*** _March 20th, 2023_
 
 ***[Documentation](https://gerlogu.com/wp-content/uploads/2023/02/Fixed-Camera-System-Users-Manual.pdf) / [Official Website](https://gerlogu.com) / [GitHub Profile](https://github.com/gerlogu)***
 
