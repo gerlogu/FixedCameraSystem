@@ -19,7 +19,7 @@
 			"Name": "FixedCameraSystem",
 			"Type": "Editor",
 			"LoadingPhase": "PostEngineInit",
-			"WhitelistPlatforms": [ "Win64", "Win32", "Mac", "IOS", "Android", "HTML5", "Linux", "XboxOne", "PS4", "Switch" ]
+			"WhitelistPlatforms": [ "Win64", "Win32", "Mac", "IOS", "Android", "Linux", "XboxOne", "PS4", "Switch" ]
 		}
 	]
 }

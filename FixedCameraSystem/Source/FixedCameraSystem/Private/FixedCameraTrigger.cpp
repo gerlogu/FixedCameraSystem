@@ -55,7 +55,7 @@ AFixedCameraTrigger::AFixedCameraTrigger()
 	SetActorScale3D(FVector(1.f, 5, 5));
 
 	Trigger1->OnComponentBeginOverlap.AddDynamic(this, &AFixedCameraTrigger::OnTriggerBeginOverlap1);
-	Trigger1->OnComponentBeginOverlap.AddDynamic(this, &AFixedCameraTrigger::OnTriggerBeginOverlap2);
+	Trigger2->OnComponentBeginOverlap.AddDynamic(this, &AFixedCameraTrigger::OnTriggerBeginOverlap2);
 
 	Trigger1->OnComponentEndOverlap.AddDynamic(this, &AFixedCameraTrigger::OnTriggerEndOverlap1);
 	Trigger2->OnComponentEndOverlap.AddDynamic(this, &AFixedCameraTrigger::OnTriggerEndOverlap2);
