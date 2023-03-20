@@ -1,8 +1,12 @@
 # Fixed Camera System
-![Version](https://img.shields.io/badge/Version-1.0.3-3FB911?style=flat&logo&logoColor=white&labelColor=4d4d4d)</br>
+![Version](https://img.shields.io/badge/Version-1.0.3-3FB911?style=flat&logo&logoColor=white&labelColor=4d4d4d)
+![Asset Type](https://img.shields.io/badge/Code_Plugin-d9ad00?style=flat)
+![Asset Stars](https://img.shields.io/github/stars/gerlogu/FixedCameraSystem?style=social)</br>
 Add cinematographic cameras by easily dragging them into the scene and use different tools to configure their style and path.
 
-![Thumbnail](https://user-images.githubusercontent.com/55363746/219978541-f7c4c4d5-d890-4dfa-a4d6-4e3249c2244e.jpg)
+![Thumbnail](https://user-images.githubusercontent.com/55363746/223795282-e84bbf4b-81de-4f7c-919e-223c3363df94.png)
+
+##### <div align="center">If you find this asset useful, please support it by giving a "★ Star" to the repository, thank you!</div>
 
 ## Description
 ***Latest Update:*** _February 23th, 2023_
